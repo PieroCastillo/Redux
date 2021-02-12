@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Redux.Animation\Redux.Animation.csproj" />
+    <ProjectReference Include="..\Redux.Base\Redux.Base.csproj" />
+  </ItemGroup>
+
+</Project>
