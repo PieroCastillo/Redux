@@ -16,7 +16,7 @@ public class CustomComponent : Component
 }
 ```
 
-- Has the Avalonia/WPF or be an AvaloniaControl(more possible this)
+- Has the Avalonia/WPF model or be an AvaloniaControl(more possible this)
  
 With Avalonia/WPF model:
 ```c#
