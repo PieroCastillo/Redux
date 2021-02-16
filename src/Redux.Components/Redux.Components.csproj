@@ -14,7 +14,6 @@
     <ProjectReference Include="..\Redux.Layouts\Redux.Layouts.csproj" />
     <ProjectReference Include="..\Redux.Media\Redux.Media.csproj" />
     <ProjectReference Include="..\Redux.Renders\Redux.Renders.csproj" />
-    <ProjectReference Include="..\Vulkan\Redux.Vulkan\Redux.Vulkan.csproj" />
   </ItemGroup>
 
 </Project>

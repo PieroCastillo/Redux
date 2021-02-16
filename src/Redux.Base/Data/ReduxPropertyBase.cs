@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Redux.Components
+namespace Redux.Data
 {
-    public class Component : InputElement
+    public class ReduxPropertyBase<T>
     {
     }
 }

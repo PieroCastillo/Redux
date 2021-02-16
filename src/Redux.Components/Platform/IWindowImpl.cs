@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Redux.Components
+namespace Redux.Platform
 {
-    public class Component : InputElement
+    public interface IWindowImpl
     {
+
     }
 }

@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Redux.Components
 {
-    public class Component : InputElement
+    public class AutoRenderable : ContentComponent
     {
+
     }
 }

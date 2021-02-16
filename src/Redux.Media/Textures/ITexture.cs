@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
-namespace Redux.Components
+namespace Redux.Textures
 {
-    public class Component : InputElement
+    public interface ITexture
     {
+        
     }
 }

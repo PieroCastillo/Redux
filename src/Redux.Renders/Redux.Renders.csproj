@@ -11,6 +11,7 @@
     <ProjectReference Include="..\Redux.Animation\Redux.Animation.csproj" />
     <ProjectReference Include="..\Redux.Base\Redux.Base.csproj" />
     <ProjectReference Include="..\Redux.Layouts\Redux.Layouts.csproj" />
+    <ProjectReference Include="..\Redux.Media\Redux.Media.csproj" />
   </ItemGroup>
 
 </Project>

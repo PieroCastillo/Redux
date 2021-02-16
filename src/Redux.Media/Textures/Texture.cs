@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Redux.Components
+namespace Redux.Textures
 {
-    public class Component : InputElement
+    public class Texture : ITexture
     {
     }
 }

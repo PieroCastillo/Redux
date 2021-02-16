@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Redux.Components
+namespace Redux.AppTypes
 {
-    public class Component : InputElement
+    public interface IApplicationType
     {
     }
 }
