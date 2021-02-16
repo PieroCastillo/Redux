@@ -51,3 +51,31 @@ public class CustomComp : Component
   }
 }
 ```
+- Supports Non-FPS-dependent Animation System
+```c#
+public class CustomComp : Component
+{
+  protected override void Loaded()
+  {
+    base.Loaded();
+    var anim = new Animation();
+    anim.Clock = ReduxLocator.Current.GetService<IReduxClock>();
+    anim.Duration = new TimeSpan(hours: 0, minutes: 0, seconds: 30);
+    var points = this.AsModel().GetPoints(); //returns Redux.Points
+    var topP = points.TryGetPointRelativeFrom(x: 30,y: 20,z: 30); //get a point if that exist, if not, creates a new point.
+    anim.Frames = new AnimationFrames()
+    {
+      new AnimationFrame(cue: 0) { topP.X = 30, topP.Y = 20, topP.Z  = 30  },
+      new AnimationFrame(cue: 100) { topP.X = 130, topP.Y = 120, topP.Z  = 130  }
+    }
+    this.Animations.Insert(0, anim);
+  }
+  
+  protected override void OnPointerEnter(ReduxEventsArgs e)
+  {
+    var anim = this.Animations[0];
+    
+    anim.Starts();
+  }
+}
+```
