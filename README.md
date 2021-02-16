@@ -59,7 +59,7 @@ public class CustomComp : Component
   {
     base.Loaded();
     var anim = new Animation();
-    anim.Clock = ReduxLocator.Current.GetService<IReduxClock>();
+    anim.Clock = ReduxLocator.Current.GetService<IReduxGlobalClock>();
     anim.Duration = new TimeSpan(hours: 0, minutes: 0, seconds: 30);
     var points = this.AsModel().GetPoints(); //returns Redux.Points
     var topP = points.TryGetPointRelativeFrom(x: 30,y: 20,z: 30); //get a point if that exist, if not, creates a new point.
